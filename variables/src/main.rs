@@ -10,7 +10,7 @@ fn main() {
     let n:i8 = -128;
 
     let tup = ("Lanny", 12,43);
-    let (name, n1,n2) = tup;
+    let (name, _n1,n2) = tup;
     let n1 = tup.1;
 
     let error_codes = [200, 404,500];
@@ -28,7 +28,7 @@ fn main() {
     println!();
 
     let mut counter:u8 =  3;
-    while counter != 0{
+    while counter > 0{
         println!("{}!", counter);
         counter-=1;
 
